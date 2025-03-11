@@ -2,7 +2,7 @@
 
 1. Intalar o Docker e configurar o WSL no windows
 2. Rodar o comando no powershell como administador:
-   - `!curl -sfL https://raw.githubusercontent.com/milvus-io/milvus/master/scripts/standalone_embed.sh -o standalone_embed.sh`
+   - `Invoke-WebRequest https://raw.githubusercontent.com/milvus-io/milvus/refs/heads/master/scripts/standalone_embed.bat -OutFile standalone.bat`
 3. Instalar o Ollama:
    - `https://ollama.com/`
 4. Abrir o CMD como administrador e rodar o comando:
