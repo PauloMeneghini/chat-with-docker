@@ -1,14 +1,21 @@
 # Instruções para rodar a IA
 
-1. ### Rodar os seguintes comandos:
+1. Intalar o Docker e configurar o WSL no windows
+2. Rodar o comando no powershell como administador:
+   - `!curl -sfL https://raw.githubusercontent.com/milvus-io/milvus/master/scripts/standalone_embed.sh -o standalone_embed.sh`
+3. Instalar o Ollama:
+   - `https://ollama.com/`
+4. Abrir o CMD como administrador e rodar o comando:
+   - `ollama pull llama3`
+
+5. ### Rodar os seguintes comandos:
   - `pip install langchain-huggingface`
-  - `pip install -qU  langchain_milvus`
   - `pip install langchain_community`
   - `pip install langchain_core`
   - `pip install Flask`
   - `pip install pypdf`
-2. Após todas as bibliotecas instaladas, basta digitar e rodar o seguinte comando no terminal na pasta do projeto
+
+6. Após todas as bibliotecas instaladas, basta digitar e rodar o seguinte comando no terminal na pasta do projeto
   - `python app.py`
     Esse comando irá iniciar o servidor python na porta 5050
 
-### Observação: O Milvus só roda em sistemas com base Unix (Linux/Mac)
