@@ -16,6 +16,7 @@
   - `pip install langchain-huggingface`
   - `pip install langchain_community`
   - `pip install langchain_core`
+  - `pip install -qU  langchain_milvus`
   - `pip install Flask`
   - `pip install pypdf`
 
