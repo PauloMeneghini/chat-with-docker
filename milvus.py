@@ -16,8 +16,6 @@ def initialize_milvus():
 
     embeddings = HuggingFaceEmbeddings(model_name='all-MiniLM-L6-v2')
 
-    #loader = PyPDFLoader('./data/dados.pdf')
-
     # Configurando o TextSplitter
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=600, chunk_overlap=300)
 
@@ -36,9 +34,6 @@ def initialize_milvus():
             print(f"Arquivo carregado: {file_path}")
 
     print("Todos os arquivos foram carregados!")
-
-    # for doc in documents:
-    #     print(doc)
     
     URI = "http://localhost:19530"
     vector_store_saved = Milvus.from_documents(
@@ -56,8 +51,5 @@ def initialize_milvus():
         connection_args={"uri": URI},
         collection_name="LangChainCollection",
     )
-
-    print(f"VECTOR saved: {vector_store_saved}")
-    print(f"VECTOR LOADED: {vector_store_loaded}")
 
     return vector_store_saved
