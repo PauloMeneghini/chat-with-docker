@@ -21,7 +21,7 @@
 # 4. Abrir o CMD como administrador (Windows) ou Terminal (MacOs ou Linux) e rodar o comando:
   - `ollama pull llama3`
 
-# 5. ### Rodar o script que instala as bibliotecas necessárias:
+# 5. Rodar o script que instala as bibliotecas necessárias:
   - `python install_packages.py`
 
 # 6. Após todas as bibliotecas instaladas, basta digitar e rodar o seguinte comando no terminal na pasta do projeto
