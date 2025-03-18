@@ -1,7 +1,7 @@
 # Instruções para rodar a IA
 
 # 1. Intalar o Docker
-  - `https://www.docker.com/products/docker-desktop/`
+  https://www.docker.com/products/docker-desktop/
 
 # 2. Baixar e executar o container do Milvus    
   ## Em sistemas Windows
